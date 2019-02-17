@@ -1,0 +1,137 @@
+document.getElementById("ewalletTitle").onclick = function () {
+    location.href = "index.html";
+};
+
+zingchart.THEME='classic';
+var myConfig = {
+    "graphset":[
+        {
+            "globals": {
+                "font-family": "Arial"
+            },
+            "type":"mixed",
+            "width":"100%",
+            "background-color":"#FFFFFF",
+            "subtitle":{
+                "text":"40% <i>Compared to Last Month</i>",
+                "x":"55px",
+                "y":"35px",
+                "align":"left",
+                "bold":false,
+                "font-size":"14px",
+                "font-color":"#7E7E7E",
+                "background-color":"none"
+            },
+            "legend":{
+                "x":"32px",
+                "y":"80px",
+                "layout":"float",
+                "background-color":"none",
+                "toggle-action":"remove",
+                "border-width":0,
+                "shadow":0,
+                "marker":{
+                    "type":"circle"
+                },
+                "item":{
+                    "font-color":"#7E7E7E"
+                }
+            },
+            "shapes":[
+                {
+                    "type":"triangle",
+                    "background-color":"#5297B6",
+                    "size":"5px",
+                    "x":"50px",
+                    "y":"50px"
+                }
+            ],
+            "plot":{
+                "bar-space":20
+            },
+            "plotarea":{
+                "margin":"125px 45px 30px 45px"
+            },
+            "scale-x":{
+                "values":["WEEK 1","WEEK 2","WEEK 3","WEEK 4"],
+                "line-color":"#D9D7D5",
+                "line-width":"1px",
+                "tick":{
+                    "visible":false
+                },
+                "guide":{
+                    "visible":false
+                },
+                "item":{
+                    "color":"#8B8B8B"
+                }
+            },
+            "scale-y":{
+                "values":"0:25:5",
+                "line-color":"#D9D7D5",
+                "line-width":"1px",
+                "tick":{
+                    "visible":false
+                },
+                "guide":{
+                    "line-style":"dotted"
+                },
+                "item":{
+                    "color":"#8B8B8B"
+                }
+            },
+            "series":[
+                {
+                    "type":"bar",
+                    "text":"SAVINGS",
+                    "values":[15,10,4,13],
+                    "background-color":"#F29E4A",
+                    "bar-width":"10px",
+                    "hover-state":{
+                        "visible":false
+                    }
+                },
+                {
+                    "type":"bar",
+                    "text":"EXPENSES",
+                    "values":[3,2,4,5],
+                    "background-color":"#7BBADE",
+                    "bar-width":"10px",
+                    "hover-state":{
+                        "visible":false
+                    }
+                },
+                {
+                    "type":"bar",
+                    "text":"INVESTMENTS",
+                    "values":[4,2,5,6],
+                    "background-color":"#93DE7F",
+                    "bar-width":"10px",
+                    "hover-state":{
+                        "visible":false
+                    }
+                },
+                {
+                    "type":"line",
+                    "text":"TOTAL",
+                    "aspect":"spline",
+                    "values":[22,14,13,24],
+                    "line-color":"#8B8B8B",
+                    "line-width":"2px",
+                    "highlight":false,
+                    "marker":{
+                        "background-color":"#FFFFFF",
+                        "border-color":"#8B8B8B",
+                        "border-width":"2px",
+                        "shadow":false
+                    }
+                }
+            ]
+        }
+    ]
+};
+ 
+zingchart.render({ 
+	id : 'myChart', 
+	data : myConfig, 
+});
