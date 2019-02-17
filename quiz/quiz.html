@@ -1,17 +1,30 @@
+<!--
+    Val Zvyagin -- Uncommon Hacks 2019
+    Piggy Bank Financial Literacy WebApp
+-->
+
 <!DOCTYPE html>
 <head>
+    <title>Financial Literacy Quiz</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700i" rel="stylesheet">
     <link type="text/css" href="css/quiz_style.css" rel="stylesheet">
 </head>
 <body>
+    <div id="home">
+        <button><a href="http://www.uncommonhacks.com">Back to Home</a></button>
+    </div>
     <h1 id="quiz_title">Are You Financially Literate?</h1>
-    <p> This quiz is designed to gauge your leve of financial literacy. Ideally,
+    <p> This quiz is designed to gauge your level of financial literacy. Ideally,
         you should aim to get about 75% of the questions correct. After you take this quiz, you will know where to begin learning!
     </p>
-    <div class="quiz_container">
-        <div id="quiz"></div>
+    <div class="quiz-container-slides">
+        <div class="quiz_container">
+            <div id="quiz"></div>
+        </div>
     </div>
-    <div id="submit_container">    
+    <div id="submit_container"> 
+        <button id="previous">Previous Question</button>
+        <button id="next">Next Question</button>
         <button id="submit">Get Results</button>
     </div>
     <div id="results"></div>

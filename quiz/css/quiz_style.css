@@ -1,21 +1,16 @@
-html, body {
+html{
+    height:100%;
     font-family: "Roboto Condensed";
-    background:rgb(7, 68, 124);
+    background-image:linear-gradient(#4771AA,black);
     color: white;
 }
 
 #quiz_title {
+    align-items:center;
     text-align:center;
     font-size:2em;
     font-weight: 600;
-}
-
-.quiz_container {
-    border: 10px double white;
-    border-radius:15px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin:10px;
+    text-shadow: 3px 5px 5px black;
 }
 
 .form-radio
@@ -71,7 +66,6 @@ button {
     font-size: 2em;
     display:block;
     font-family: "Roboto Condensed";
-    align-items: center;
     width:auto;
     margin:0 auto;
     background-color:transparent;
@@ -88,14 +82,62 @@ button:hover{
 }
 
 .question{
+    font-size:1.75em;
     padding:0px 15px 0px;
 }
 
 .answers {
     font-weight: 125;
+    font-size:1.5em;
 }
 
 p {
     padding-right: 20px;
     padding-left: 20px;
+    font-size:1.5em;
 }
+
+#previous {
+    float:left;
+}
+
+#next {
+    float:right;
+}
+
+#submit{
+    float:right;
+}
+.slide{
+    position:absolute;
+    size:auto;
+    /*left: 0px;
+    top: 0px;*/
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+    margin-left:10px;
+    margin-right:10px;
+  }
+  .active-slide{
+    opacity: 1;
+    z-index: 2;
+  }
+  .quiz-container-slides{
+    position: relative;
+    height: 200px;
+    margin-top: 40px;
+  }
+
+  #home {
+      position:absolute;
+      float:left;
+      margin-right:15px;
+      font-size:.6em;
+  }
+a{
+    color:white;
+    text-decoration:none;
+}
+
