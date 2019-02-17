@@ -1,0 +1,101 @@
+html, body {
+    font-family: "Roboto Condensed";
+    background:rgb(7, 68, 124);
+    color: white;
+}
+
+#quiz_title {
+    text-align:center;
+    font-size:2em;
+    font-weight: 600;
+}
+
+.quiz_container {
+    border: 10px double white;
+    border-radius:15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin:10px;
+}
+
+.form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display:inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: rgb(255, 255, 255);
+     top: 10px;
+     height: 25px;
+     width: 25px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     left: 6px;
+     top: 1px;
+     content: '\02143';
+     transform: rotate(40deg);
+     font: 20px/1 'Open Sans', sans-serif;
+}
+.form-radio:hover
+{
+     background-color: rgba(155, 155, 155, 0.753);
+     content: '\02143';
+     
+}
+.form-radio:checked
+{
+     background-color: #170042;
+}
+label
+{
+     cursor: pointer;
+     display:inline-block;
+     padding: 10px;
+} 
+
+#submit_container{
+    padding: 20px;
+}
+
+button {
+    color:white;
+    font-size: 2em;
+    display:block;
+    font-family: "Roboto Condensed";
+    align-items: center;
+    width:auto;
+    margin:0 auto;
+    background-color:transparent;
+    border:solid 2px white;
+}
+
+button:hover{
+    background-image: linear-gradient(darkgray,darkblue);
+}
+
+#results{
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.question{
+    padding:0px 15px 0px;
+}
+
+.answers {
+    font-weight: 125;
+}
+
+p {
+    padding-right: 20px;
+    padding-left: 20px;
+}
